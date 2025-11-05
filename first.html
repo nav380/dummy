@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  
+  <title>The Sky High Delhi: Ultimate Rooftop Bar & Fine Dining Guide in Ansal Plaza</title>
+  
+  <meta name="description" content="Discover The Sky High in New Delhi, the premier rooftop bar and fine dining restaurant in Ansal Plaza. Get reviews, operating hours, menu details, and directions for your next unforgettable night out." />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 🌅 SUNSET & SKY THEME */
+    :root {
+      --primary: #005691; /* Deep Blue */
+      --secondary: #f4c430; /* Golden Yellow for accents */
+      --light-bg: #ffffff; /* Bright background */
+      --card-bg: #f8f8f8; /* Off-white card background */
+      --text-color: #333333; /* Dark text */
+      --muted: #666666;
+      --review-bg: #f0f0f0;
+      --success: #1e8449; /* Darker Green */
+      --info-bg: #e6f3ff; /* Light blue background for key info */
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      margin: 0;
+      color: var(--text-color);
+    }
+
+    header {
+      text-align: center;
+      background-color: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+    }
+    
+    /* **SEO Optimization - H1:** Make the H1 the primary focus keyword for the article. 
+    */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+      color: white; 
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* **SEO Optimization - Headings:** Ensure H2, H3, and H4 structure is logical. 
+    */
+    h2, h3, h4 {
+      color: var(--primary);
+      margin-top: 1.5rem;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--secondary);
+    }
+    
+    .venue-card {
+      background: var(--card-bg);
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* --- Image Style --- */
+    .venue-photo {
+        width: 100%;
+        height: 350px; /* Slightly larger image for visual appeal */
+        background-color: #ccc;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid var(--primary);
+    }
+    /* ------------------------ */
+
+    .meta-row {
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .rating-score {
+        background: var(--secondary);
+        color: var(--text-color);
+        padding: 8px 15px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    
+    .price-level {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    
+    .status-operational { background: var(--success); color: white; }
+    .status-closed { background: #d9534f; color: white; }
+
+    .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted min-width */
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    /* Extended grid for services (5 columns or wrap) */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .info-box {
+        background: var(--light-bg);
+        border: 1px solid #e0e0e0;
+        padding: 1.2rem;
+        border-radius: 10px;
+        transition: box-shadow 0.2s;
+    }
+
+    .info-box.highlight {
+        background: var(--info-bg);
+        border: 1px solid var(--primary);
+    }
+    
+    .info-box strong {
+        color: var(--primary);
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+    
+    .info-box ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    .info-box li {
+        margin-bottom: 4px;
+        font-size: 0.95rem;
+        color: var(--text-color);
+    }
+    
+    .cta-buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .cta-buttons a {
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background-color 0.2s;
+    }
+
+    .cta-map { background: var(--primary); color: white; }
+    .cta-map:hover { background: #004070; }
+    
+    .cta-website { background: var(--secondary); color: var(--text-color); border: 1px solid var(--secondary); }
+    .cta-website:hover { background: #e6b324; }
+
+    .review-item {
+      background: var(--review-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--secondary);
+    }
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    
+    .review-user {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .review-score {
+      color: var(--secondary); 
+      font-size: 0.9em;
+    }
+    
+    .review-comment {
+        color: var(--muted);
+        line-height: 1.5;
+        font-style: italic;
+    }
+    
+    .map-embed {
+        border: 1px solid #ddd;
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    
+    .cuisine-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    .cuisine-list li {
+        background: var(--secondary);
+        color: var(--text-color);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+    
+    .bullet-point-summary {
+        list-style: disc;
+        padding-left: 20px;
+        margin-top: 10px;
+        color: var(--text-color);
+    }
+
+    footer {
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        background-color: var(--card-bg);
+        color: var(--muted);
+        font-size: 0.9rem;
+        border-top: 1px solid #eee;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="placeNameHeader">The Sky High Delhi: Best Rooftop Bar & Fine Dining</h1>
+    <p id="placeTagline" style="color:white; font-size:1.2rem; font-weight:300; margin-top:5px;">
+        <span id="primaryTypeDisplay">Rooftop Restaurant, Bar & Lounge | Ansal Plaza, New Delhi</span>
+    </p>
+  </header>
+
+  <main>
+    <section class="venue-card">
+      
+      <div class="venue-photo" id="venuePhoto" style="background-image: url('https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICnkOzMnAE!2e10!4m2!3m1!1s0x390ce244700fb193:0xad018fb6e2cef39e');">
+          <span style="position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;">Rooftop view of The Sky High in Ansal Plaza, New Delhi</span>
+      </div>
+      
+      <div class="meta-row">
+          <span id="placeRating">⭐⭐⭐⭐☆ <span class="rating-score">4.1</span></span>
+          <span id="reviewCount" style="color:var(--muted); font-size: 1rem;">**2,691 Reviews**</span>
+          <span id="priceLevel" class="price-level">$$$ Expensive</span>
+          <span id="businessStatus" class="status-badge status-operational " style="padding: 4px; border-radius: 40px; ">OPERATIONAL</span>
+      </div>
+      
+      <h2>✨ Experience The Sky High: Delhi's Premier Rooftop Destination</h2>
+      <p id="editorialSummary" style="margin-top:8px; color:var(--text-color); font-size:1.05rem;">
+        **The Sky High** is renowned as one of the **best rooftop bars in New Delhi**, offering a stunning panoramic view and an extensive menu of global cuisine. Located conveniently in **Ansal Plaza**, it features exquisite Asian, Italian, Mughlai, and Continental fare, complemented by a vibrant atmosphere, perfect for a memorable evening of **fine dining in South Delhi**.
+      </p>
+      
+      <div class="cta-buttons">
+          <a id="ctaMapLink" class="cta-map" target="_blank" href="https://maps.google.com/?cid=12466403259190277022&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA">📍 GET DIRECTIONS to Ansal Plaza</a>
+          <a id="ctaWebsiteLink" class="cta-website" target="_blank" href="#">🌐 VIEW MENU & BOOK TABLE</a> 
+      </div>
+      
+      <div class="detail-grid">
+        
+        <div class="info-box highlight">
+            <strong>🕰️ The Best Time to Visit The Sky High Delhi</strong>
+            <ul id="visitTimeSummary" class="bullet-point-summary" style="list-style:none; padding-left:0;">
+                <li>**Best Time:** Evening for the **rooftop ambiance** and beautiful city views.</li>
+                <li>**Ideal Meal:** **Dinner** (Open daily until 1:00 AM) — perfect for a late-night experience.</li>
+                <li>**Tip:** Due to high popularity for its **rooftop seating**, we strongly recommend reserving your table in advance.</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <strong>🍽️ Must-Try Dishes & Vibe at this Fine Dining Spot</strong>
+            <ul id="mealReviewSummary" class="bullet-point-summary">
+                <li>**Must-Try Dishes:** Highly rated items include the **Chicken Tikka**, gourmet **pizza**, and the refreshing **fruit punch cocktail**.</li>
+                <li>**Vibe:** Known for its **lively rooftop ambiance** with **live music**—an ideal spot for celebrations and large groups.</li>
+                <li>**Service Feedback:** While the staff is **friendly and helpful**, be prepared for potentially **slow service** during peak hours.</li>
+            </ul>
+        </div>
+      </div>
+      
+      <h2>📞 Operating Hours & Location in Ansal Plaza, New Delhi</h2>
+      <div class="detail-grid" >
+        <div class="info-box">
+            <strong>Contact Information & Quick Details</strong>
+            <p style="margin-top:10px;">
+                <strong style="color:var(--secondary);">International Phone:</strong> 
+                <a id="placePhoneInternational" style="color:var(--primary); text-decoration:none;" href="tel:+919870199077">+91 98701 99077</a>
+            </p>
+            <p style="margin-top:10px;">
+                <strong style="color:var(--secondary);">Local Phone:</strong> 
+                <span id="placePhoneNational">098701 99077</span>
+            </p>
+            <p style="margin-top:10px;">
+                <strong style="color:var(--secondary);">Next Closing Time:</strong> 
+                <strong id="nextClose" style="color:var(--primary);">1:00 AM</strong> (IST)
+            </p>
+        </div>
+        <div class="info-box">
+            <strong>Daily Operating Hours (Open Late!)</strong>
+            <ul id="hoursList" style="margin-top:5px;">
+                <li>**Monday:** 12:00 PM – 1:00 AM</li>
+                <li>**Tuesday:** 12:00 PM – 1:00 AM</li>
+                <li>**Wednesday:** 12:00 PM – 1:00 AM</li>
+                <li>**Thursday:** 12:00 PM – 1:00 AM</li>
+                <li>**Friday:** 12:00 PM – 1:00 AM</li>
+                <li>**Saturday:** 12:00 PM – 1:00 AM</li>
+                <li>**Sunday:** 12:00 PM – 1:00 AM</li>
+            </ul>
+            <p style="font-size:0.9em; margin-top:10px; color:var(--muted);">
+                **Address Snippet:** Ansal Plaza, C 306A, August Kranti Marg, Hudco Place, Khel Gaon, Andrews Ganj, **New Delhi 110049**
+            </p>
+        </div>
+      </div>
+
+      <h2>⚙️ Services, Amenities, and Accessibility at This Top Delhi Restaurant</h2>
+      <div class="services-grid">
+          
+          <div class="info-box">
+              <strong>Dining & Reservations</strong>
+              <ul id="diningServices">
+                  <li>✅ 🍽️ **In-House Dine-In** Service</li>
+                  <li>✅ 🥡 **Takeout** Available</li>
+                  <li>✅ 📅 **Reservations** Recommended for Rooftop</li>
+                  <li>❌ 🚗 Curbside Pickup Not Available</li>
+              </ul>
+          </div>
+          
+          <div class="info-box">
+              <strong>Meal & Drink Service</strong>
+              <ul id="mealServices">
+                  <li>✅ 🍳 Serves **Breakfast**</li>
+                  <li>✅ 🥗 Serves **Lunch**</li>
+                  <li>✅ 🥩 Serves **Dinner**</li>
+                  <li>✅ 🍺 Serves **Beer** (Full Bar)</li>
+                  <li>✅ 🍷 Serves **Wine** (Full Bar)</li>
+              </ul>
+          </div>
+
+          <div class="info-box">
+              <strong>✨ Venue Amenities & Suitability</strong>
+              <ul id="amenitiesServices">
+                  <li>✅ 🌳 **Outdoor Rooftop Seating**</li>
+                  <li>✅ 👥 Excellent for **Group Gatherings**</li>
+                  <li>✅ 👨‍👩‍👧 Good for **Families and Children**</li>
+                  <li>✅ ☕ Serves **Coffee**</li>
+                  <li>✅ 🚻 Restroom Available</li>
+                  <li>❌ 👶 Dedicated Menu for Children</li>
+              </ul>
+          </div>
+
+          <div class="info-box">
+              <strong>🅿️ Parking Options Near The Sky High</strong>
+              <ul id="parkingServices">
+                  <li>✅ **Free Parking Lot** (Subject to Mall rules)</li>
+                  <li>✅ Paid Parking Lot Available</li>
+                  <li>✅ Paid Street Parking Nearby</li>
+              </ul>
+          </div>
+          
+          <div class="info-box">
+              <strong>💳 Accepted Payment Methods</strong>
+              <ul id="paymentServices">
+                  <li>✅ Accepts **Credit Cards** (Visa, Mastercard, etc.)</li>
+                  <li>✅ Accepts **Debit Cards**</li>
+                  <li>✅ Accepts **NFC Payments** (Contactless)</li>
+                  <li>❌ Cash Only is NOT the policy</li>
+              </ul>
+          </div>
+
+          <div class="info-box">
+              <strong>♿ Accessibility Features</strong>
+              <ul id="accessibilityServices">
+                  <li>✅ **Wheelchair Accessible Entrance**</li>
+                  <li>✅ **Wheelchair Accessible Seating**</li>
+                  <li>❌ Wheelchair Accessible Restroom (Verify on site)</li>
+              </ul>
+          </div>
+
+      </div>
+      
+      <h2>💬 Latest Traveler Reviews for The Sky High (2,691 Total)</h2>
+      <div id="reviewsList">
+          <div class="review-item">
+            <div class="review-header">
+                <span class="review-user">Pranav Kumar</span>
+                <span class="review-score">⭐⭐⭐⭐☆</span>
+            </div>
+            <div class="review-comment">A Delightful Experience Overall! The **rooftop ambiance** was impressive, and the **sky-high view** added a special charm to the visit. The food was delicious, and the drinks were exceptionally well-crafted. The menu was thoughtfully curated, featuring a wide range of major cuisines to suit varied tastes. The staff were warm and welcoming, enhancing the overall experience. However, the seating layout could be improved for better comfort and space management. Definitely worth a one-time visit for **Delhiites looking for a unique dining experience**! <span style="font-size: 0.8em; color: var(--muted); margin-left: 5px;">— 3 months ago</span></div>
+          </div>
+          </div>
+      
+      <h2>🗺️ Map & Directions to The Sky High Rooftop Bar</h2>
+      <iframe id="mapEmbed" class="map-embed" src="https://maps.google.com/maps?q=$28.562589,77.22394&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+      <h3 style="margin-top:30px;">📑 Full Address Components (For Navigation & Delivery)</h3>
+      <p style="color:var(--muted); font-size:0.9em;">Detailed breakdown of the location within Ansal Plaza for mapping/delivery services:</p>
+      <ul id="addressComponentsList" class="bullet-point-summary" style="list-style:disc; padding-left:25px; margin-top:10px;">
+          <li>**Sub-Premise:** 307,T101,102 (The specific floor/unit)</li>
+          <li>**Premise:** **Ansal Plaza** (Major Landmark)</li>
+          <li>**Street Address:** C 306A, August Kranti Marg</li>
+          <li>**Sub-Locality:** Hudco Place, Khel Gaon, Andrews Ganj</li>
+          <li>**Locality:** **New Delhi**</li>
+          <li>**Country:** India (IN)</li>
+          <li>**Postal Code:** 110049 (Essential for local search)</li>
+      </ul>
+      
+      <h3 style="margin-top:30px;">🏷️ Cuisine Types and Categories</h3>
+      <ul id="cuisineList" class="cuisine-list">
+          <li>**Rooftop Bar**</li>
+          <li>**Fine Dining Restaurant**</li>
+          <li>Night Club</li>
+          <li>Chinese Restaurant</li>
+          <li>Bar</li>
+          <li>Italian Restaurant</li>
+          <li>Indian Restaurant</li>
+          <li>Lounge</li>
+      </ul>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The Travel Blog | Your Guide to the Best of New Delhi | <a href="#" style="color:var(--primary); text-decoration: none;">Privacy Policy</a></p>
+  </footer>
+
+  </body>
+</html>
