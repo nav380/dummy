@@ -1,484 +1,275 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Detailed Guide: Humayun’s Tomb, Taj Mahal, and Agra Fort</title>
-  <meta name="description" content="A detailed guide to three iconic UNESCO World Heritage Sites in North India, including history, amenities, hours, and traveler reviews." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Things to See and Experience Indoors in Dubai and Abu Dhabi</title>
   <style>
-    :root {
-      --primary: #8b5e34;
-      --accent: #d1a264;
-      --muted: #666;
-      --bg: #f9f6f1;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      margin: 0;
+      background-color: #f5f7f2;
       color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
 
-    header {
+    .content-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header-section {
       text-align: center;
-      background: var(--primary);
-      color: white;
-      padding: 1.5rem 1rem;
+      margin-bottom: 40px;
     }
 
-    main {
-      max-width: 850px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .header-section h1 {
+      color: #4b6043;
+      font-size: 2.4em;
+      margin-bottom: 10px;
     }
 
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.3rem;
-    }
-
-    h2, h3, h4 {
-      color: var(--primary);
-    }
-
-    /* --- New Card Style for Overview Section --- */
-    #overviewCard {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1.5rem; /* Increased padding */
-      margin-top: 15px;
-    }
-    
-    #placesOverview li {
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px dashed #eee; /* Separator for list items */
-    }
-
-    .card {
-      background: white;
-      border-radius: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 0.8rem;
-    }
-
-    .meta-row {
-      color: var(--accent);
-      font-weight: 500;
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
+    .tag-container {
       display: flex;
-      justify-content: space-between;
-    }
-    
-    .meta-row span:last-child {
-        color: var(--muted);
-    }
-
-    ul {
-      margin-top: 0.3rem;
-      padding-left: 1.2rem;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
     }
 
-    li {
-      margin-bottom: 0.3rem;
+    .tag {
+      background-color: #8fc156;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      text-transform: capitalize;
     }
 
-    .local-exp-card {
-      background: #f8f3eb;
-      border-radius: 8px;
-      padding: 0.5rem 0.7rem;
-      margin-bottom: 0.6rem;
-      font-size: 0.9rem;
+    .main-image {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
     }
 
-    .review-item {
-      background: #f5eee6;
-      padding: 0.6rem 0.8rem;
-      border-radius: 6px;
-      margin-bottom: 0.6rem;
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .review-user {
-      font-weight: 600;
-      color: var(--primary);
+    h2, h3 {
+      color: #4b6043;
     }
 
-    .review-score {
-      margin-left: 4px;
-      color: #e8a53e;
-    }
-
-    .info-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-        margin-top: 10px;
-    }
-    
     .info-box {
-        background: #f5eee6;
-        padding: 0.8rem;
-        border-radius: 8px;
+      background-color: #f0f7eb;
+      border-left: 5px solid #8fc156;
+      padding: 15px;
+      border-radius: 8px;
     }
 
-    .check-list li {
-        list-style: none;
-        padding-left: 1rem;
-        position: relative;
-        margin-bottom: 4px;
+    .rating-item {
+      margin: 5px 0;
     }
-    
-    .check-list li::before {
-        content: '✓';
-        color: #4CAF50; /* Green checkmark */
-        font-weight: bold;
-        position: absolute;
-        left: 0;
+
+    .review-card {
+      background: #f8faf7;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-left: 4px solid #8fc156;
     }
-    
-    .map-embed {
-        border: 0;
-        width: 100%;
-        height: 300px;
-        border-radius: 8px;
-        margin-top: 10px;
-    }
-    
-    footer {
+
+    .booking-cta {
       text-align: center;
-      color: var(--muted);
-      padding: 2rem 0 1rem;
-      font-size: 0.9rem;
+      background: #8fc156;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
     }
 
-    @media (max-width: 600px) {
-      h1 { font-size: 1.5rem; }
-      .card img { height: 180px; }
-      .info-grid { grid-template-columns: 1fr; }
+    .booking-cta a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: #6b9e3d;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* Legal Advice Section */
+    .legal-section {
+      background: #eef6e7;
+      border-left: 6px solid #8fc156;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+    .legal-section h2 {
+      color: #4b6043;
+      margin-bottom: 10px;
+    }
+
+    .legal-section ul {
+      list-style: square;
+      margin-left: 20px;
+    }
+
+    .legal-category {
+      margin-top: 20px;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+
+    .legal-category h3 {
+      color: #8fc156;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .info-boxes { flex-direction: column; }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>🇮🇳 Iconic Heritage Sites of North India</h1>
-    <p>Humayun's Tomb, Taj Mahal, and Agra Fort</p>
-  </header>
-
-  <main>
-    <section class="article" id="article">
-      
-      <div id="overviewCard">
-        <h3 style="color:#4e2a1f; margin-top:0;">🏆 Places Overview & Brief Notes</h3>
-        <ul id="placesOverview" style="list-style:none;padding:0;color:#444;margin-top:12px"></ul>
+  <div class="content-wrapper">
+    <header class="header-section">
+      <h1>Cool Things to See and Experience Indoors in Dubai and Abu Dhabi</h1>
+      <div class="tag-container">
+        <div class="tag">dubai & abu dhabi</div>
+        <div class="tag">indoor attractions</div>
+        <div class="tag">travel guide</div>
+        <div class="tag">culture & entertainment</div>
       </div>
-      
-      <div id="placesList" class="list" style="margin-top:28px"></div>
+      <img src="pexels-pixabay-162031.jpg" alt="A general image representing Dubai/Abu Dhabi indoor activities" class="main-image">
+    </header>
 
-      <section style="margin-top:24px">
-        <h3 style="color:#4e2a1f">About this Guide</h3>
-        <p style="color:var(--muted)">
-          Information is sourced from public domain data, including history, practical details, and traveler reviews for a comprehensive planning experience.
-        </p>
-      </section>
+    <section class="article-intro">
+      <p>Dubai and Abu Dhabi, known for their stunning architecture and luxurious outdoor attractions, also offer a plethora of indoor activities that cater to all interests. Whether you're looking to escape the heat or explore something new, here are some cool indoor experiences you shouldn't miss:</p>
+      <ul>
+        <li><strong>The Dubai Mall:</strong> Ice rink, aquarium, and VR park.</li>
+        <li><strong>Louvre Abu Dhabi:</strong> Global art collections and stunning architecture.</li>
+        <li><strong>Ski Dubai:</strong> Indoor skiing and penguin encounters.</li>
+        <li><strong>VR Park Dubai:</strong> Immersive virtual adventures.</li>
+        <li><strong>Etihad Museum:</strong> UAE history and interactive exhibits.</li>
+        <li><strong>Dubai Opera:</strong> World-class performances and concerts.</li>
+        <li><strong>KidZania Dubai:</strong> Edutainment for children.</li>
+      </ul>
     </section>
-  </main>
 
-  <footer>© 2025 Heritage Explorer | Curated Information</footer>
+    <section class="attraction-detail">
+      <h2>1. Burj Khalifa</h2>
+      <div class="summary-rating"><span class="stars">⭐⭐⭐⭐⭐</span> (4.8/5 based on 2300 reviews)</div>
+      <img src="pexels-pixabay-162031.jpg" alt="Burj Khalifa" style="width:100%;border-radius:10px;margin:20px 0;">
+      <p>The <strong>Burj Khalifa</strong>, standing at 828 meters, is the tallest building in the world and a symbol of Dubai's innovation. Visitors enjoy breathtaking views, luxury residences, and events.</p>
 
-  <script>
-    const places = [
-      {
-        destination: {
-          name: "Humayun’s Tomb",
-          emoji: "🛕",
-          rating: { score: 4.6, total_reviews: 48200 },
-          summary: "A UNESCO World Heritage Site — Humayun’s Tomb is a grand Mughal garden-tomb built in 1572, featuring stunning red sandstone and white marble architecture surrounded by charbagh gardens.",
-          history_brief: "The first grand dynastic garden mausoleum in India, it was commissioned by Empress Bega Begum and served as the architectural inspiration for the Taj Mahal.", // Added brief history note
-          images: { featured: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Humayun%27s_Tomb_main_view.jpg" }, 
+      <div class="info-boxes" style="display:flex;gap:20px;flex-wrap:wrap;">
+        <div class="info-box" style="flex:1;">
+          <h3>Opening Hours</h3>
+          <p>Sunday–Wednesday: 8:30 AM – 11:00 PM<br>Thursday–Saturday: 8:30 AM – 12:00 AM</p>
+        </div>
+        <div class="info-box" style="flex:1;">
+          <h3>Entry Fee</h3>
+          <p>Adults: $40<br>Children (4–12): $30<br>Under 4: Free</p>
+        </div>
+      </div>
 
-          details: {
-            history: { description: "The tomb of the Mughal Emperor Humayun, built by his first wife Bega Begum. It was the first garden-tomb on the Indian subcontinent, preceding and inspiring the Taj Mahal." }, 
-            activities: { must_do: [
-              "Walk through the symmetrical Charbagh (four-part) gardens.",
-              "Study the Persian and Mughal architectural blend.",
-              "Visit the nearby tomb of Isa Khan Niyazi."
-            ] },
-            local_experiences: { places: [
-              { emoji: "🌳", name: "Outdoor Seating", description: "Enjoy the peaceful garden areas.", category: "Amenity" },
-              { emoji: "📞", name: "Contact", description: "Phone: +91 11 2435 5275", category: "Info" }
-            ] }
-          },
+      <h3>Tips for Your Visit</h3>
+      <ul>
+        <li>Book online in advance to avoid queues.</li>
+        <li>Visit at sunset for stunning skyline views.</li>
+        <li>Check for haze or fog before visiting.</li>
+      </ul>
 
-          full_details: {
-              address: "Mathura Rd, Nizamuddin, Nizamuddin East, New Delhi, Delhi 110013, India",
-              location: { latitude: 28.5932848, longitude: 77.2507492 },
-              hours: {
-                  openNow: true,
-                  weekdayDescriptions: [
-                    "Monday: 6:00 AM – 6:00 PM",
-                    "Tuesday: 6:00 AM – 6:00 PM",
-                    "Wednesday: 6:00 AM – 6:00 PM",
-                    "Thursday: 6:00 AM – 6:00 PM",
-                    "Friday: 6:00 AM – 6:00 PM",
-                    "Saturday: 6:00 AM – 6:00 PM",
-                    "Sunday: 6:00 AM – 6:00 PM"
-                  ]
-              },
-              accessibility: {
-                  wheelchairAccessibleEntrance: true, restroom: true, familyFriendly: true, goodForChildren: true
-              },
-              parking: { free: true, paid: true, street: true },
-              payment: { cash: true, credit: true, debit: true }
-          },
-          
-          reviews: [
-            { user: "Arjun Singh", rating: 5, comment: "Beautiful monument with peaceful gardens. Great for photography!", relativePublishTimeDescription: "a week ago" },
-            { user: "Sonal Mehra", rating: 4, comment: "Well maintained historical site. Visit in the morning for less crowds.", relativePublishTimeDescription: "2 weeks ago" }
-          ]
-        }
-      },
-      {
-        destination: {
-          name: "Taj Mahal",
-          emoji: "🕌",
-          rating: { score: 4.8, total_reviews: 120000 },
-          summary: "The world-famous ivory-white marble mausoleum, commissioned in 1632 by Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal. A universal symbol of eternal love.",
-          history_brief: "Built by Emperor Shah Jahan in 1632, it is the pinnacle of Mughal architecture, representing eternal love and blending Persian, Islamic, and Indian styles.", // Added brief history note
-          images: { featured: "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" },
-          
-          details: {
-            history: { description: "A UNESCO World Heritage Site completed in 1653, it is the pinnacle of Mughal architecture, blending Persian, Indian, and Islamic styles. It sits on the south bank of the Yamuna river." }, 
-            activities: { must_do: [
-              "Visit at sunrise for the best light and fewest crowds.",
-              "Walk along the reflecting pool for the iconic photo opportunity.",
-              "View the Taj Mahal from Mehtab Bagh (Moonlight Garden) across the river."
-            ] },
-            local_experiences: { places: [
-              { emoji: "☕", name: "TDI Mall Cafes", description: "Nearby modern dining options.", category: "Dining" },
-              { emoji: "🛍", name: "Shilpgram Bazaar", description: "Handicrafts and souvenir shopping near the eastern gate.", category: "Shopping" }
-            ] }
-          },
+      <h3>Visitor Ratings</h3>
+      <div class="detail-ratings">
+        <div class="rating-item">⭐⭐⭐⭐⭐ Security</div>
+        <div class="rating-item">⭐⭐⭐⭐⭐ Cleanliness</div>
+        <div class="rating-item">⭐⭐⭐⭐⭐ Value for Money</div>
+        <div class="rating-item">⭐⭐⭐⭐⭐ Facilities</div>
+      </div>
 
-          full_details: {
-              address: "Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001, India",
-              location: { latitude: 27.1750151, longitude: 78.0421552 },
-              hours: {
-                  openNow: true,
-                  weekdayDescriptions: [
-                    "Saturday - Thursday: 30 minutes before sunrise – 30 minutes before sunset",
-                    "Friday: CLOSED"
-                  ]
-              },
-              accessibility: {
-                  wheelchairAccessibleEntrance: true, restroom: true, familyFriendly: true, goodForChildren: true
-              },
-              parking: { free: false, paid: true, street: false },
-              payment: { cash: true, credit: false, debit: false } 
-          },
-          
-          reviews: [
-            { user: "Global Traveler", rating: 5, comment: "The most beautiful building I have ever seen. Go at 5:30 AM to beat the rush!", relativePublishTimeDescription: "2 days ago" },
-            { user: "Local Guide", rating: 4, comment: "Breathtaking but crowded. Tickets are easier online.", relativePublishTimeDescription: "1 month ago" }
-          ]
-        }
-      },
-      {
-        destination: {
-          name: "Agra Fort",
-          emoji: "🏰",
-          rating: { score: 4.7, total_reviews: 87000 },
-          summary: "The majestic 16th-century fortress of red sandstone that served as the main residence of the Mughal emperors before the capital shifted to Delhi.",
-          history_brief: "A massive, walled imperial city, largely built by Emperor Akbar in the 16th century, it was the main seat of the Mughal Empire until 1638.", // Added brief history note
-          images: { featured: "https://upload.wikimedia.org/wikipedia/commons/8/88/Agra_Fort_Inside_View.jpg" },
-          
-          details: {
-            history: { description: "Built by Emperor Akbar starting in 1565, the fort is a massive walled city incorporating palaces like Khas Mahal and Jahangir Palace. Shah Jahan was later imprisoned here by his son Aurangzeb." }, 
-            activities: { must_do: [
-              "Visit Musamman Burj, the tower where Shah Jahan was confined, for a perfect view of the Taj Mahal.",
-              "Explore Diwan-i-Am (Hall of Public Audience) and Diwan-i-Khas (Hall of Private Audience).",
-              "See the immense red sandstone walls and the famous Amar Singh Gate entrance."
-            ] },
-            local_experiences: { places: [
-              { emoji: "🍛", name: "Pinch of Spice", description: "Popular Mughlai and Indian restaurant nearby.", category: "Dining" },
-              { emoji: "🛍", name: "Kinari Bazaar", description: "Traditional market for handicrafts and textiles close to the fort.", category: "Shopping" }
-            ] }
-          },
+      <h3>Recent Reviews</h3>
+      <div class="reviews-container">
+        <div class="review-card">
+          <p><strong>Alice W.</strong> ⭐⭐⭐⭐⭐ – “Breathtaking views and seamless experience!”</p>
+        </div>
+        <div class="review-card">
+          <p><strong>John D.</strong> ⭐⭐⭐⭐ – “Amazing architecture, slightly long queues.”</p>
+        </div>
+        <div class="review-card">
+          <p><strong>Sara K.</strong> ⭐⭐⭐⭐⭐ – “Loved every moment! Great staff and view.”</p>
+        </div>
+      </div>
 
-          full_details: {
-              address: "Rakabganj, Agra, Uttar Pradesh 282003, India",
-              location: { latitude: 27.1798315, longitude: 78.0210986 },
-              hours: {
-                  openNow: true,
-                  weekdayDescriptions: [
-                    "Daily: 6:00 AM – 6:00 PM"
-                  ]
-              },
-              accessibility: {
-                  wheelchairAccessibleEntrance: true, restroom: true, familyFriendly: true, goodForChildren: true
-              },
-              parking: { free: false, paid: true, street: true },
-              payment: { cash: true, credit: true, debit: true }
-          },
-          
-          reviews: [
-            { user: "Rahul S.", rating: 5, comment: "An impressive citadel. The history here is palpable, and the view of the Taj is incredible.", relativePublishTimeDescription: "3 weeks ago" },
-            { user: "Emily K.", rating: 4, comment: "Huge complex! Make sure you allocate at least 2 hours to explore the palaces.", relativePublishTimeDescription: "1 month ago" }
-          ]
-        }
-      }
-    ];
+      <h3>Must-Know Information</h3>
+      <ul>
+        <li>Tripods are not allowed on observation decks.</li>
+        <li>Dining available at At.mosphere restaurant.</li>
+        <li>Fully accessible for visitors with disabilities.</li>
+      </ul>
 
-    const placesListEl = document.getElementById('placesList');
+      <div class="booking-cta">
+        <p>Ready to experience the world's tallest building?</p>
+        <a href="#">Book Your Tickets Now</a>
+      </div>
+    </section>
 
-    function getStars(rating) {
-      return '⭐'.repeat(Math.round(rating)) + '☆'.repeat(5 - Math.round(rating));
-    }
+    <!-- Legal Advice Section -->
+    <section class="legal-section">
+      <h2>Legal Advice for Travelers in Dubai & Abu Dhabi</h2>
+      <p>When traveling in the UAE, it’s important to be aware of the laws that affect visitors, especially regarding travel, transportation, and shopping. Below are essential legal pointers to help you stay informed and avoid misunderstandings:</p>
 
-    // UPDATED FUNCTION: Uses a dedicated brief history note and improved styling
-    function renderOverview(list) {
-      const overviewEl = document.getElementById('placesOverview');
-      overviewEl.innerHTML = list.map(p => {
-        const d = p.destination;
-        const city = d.full_details.address.split(',').slice(-3, -2).join('').trim();
-        return `
-          <li>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-                <div>
-                    <strong>${d.emoji} ${d.name} (${city})</strong>
-                    <span style="color:#e8a53e; font-size:0.9em; margin-left:8px;">(${d.rating.score}/5)</span>
-                </div>
-                <div style="font-size:0.8em; color:var(--accent); font-weight:600;">
-                    ${getStars(d.rating.score)}
-                </div>
-            </div>
-            <p style="color:#555; margin: 4px 0 0 0; font-size: 0.85em;">
-                <span style="color:var(--primary);">History Note:</span> ${d.history_brief}
-            </p>
-          </li>
-        `;
-      }).join('');
-    }
+      <div class="legal-category">
+        <h3>🛫 Travel & Visa Regulations</h3>
+        <ul>
+          <li>Always carry your passport or Emirates ID; photocopies may not be accepted.</li>
+          <li>Overstaying your visa can result in fines or detention—ensure timely renewal.</li>
+          <li>Respect airport security rules; photography in restricted areas is not allowed.</li>
+        </ul>
+      </div>
 
-    function renderPlaces(list) {
-      placesListEl.innerHTML = '';
-      list.forEach((item) => {
-        const p = item.destination;
-        const mustDoHtml = (p.details.activities.must_do || []).map(a => `<li>${a}</li>`).join('');
-        const expHtml = (p.details.local_experiences.places || []).map(exp => `
-          <div class="local-exp-card">
-            ${exp.emoji} <strong>${exp.name}</strong> — ${exp.description}
-          </div>
-        `).join('');
-        const reviewHtml = (p.reviews || []).map(r => `
-          <div class="review-item">
-            <div class="review-user">${r.user}<span class="review-score">(${getStars(r.rating)})</span></div>
-            <div class="review-comment">${r.comment} <span style="color:var(--muted); font-size: 0.8em;">(${r.relativePublishTimeDescription})</span></div>
-          </div>
-        `).join('');
-        
-        // Practical Info HTML Generation
-        const hoursHtml = (p.full_details.hours.weekdayDescriptions || []).map(h => `<li>${h}</li>`).join('');
+      <div class="legal-category">
+        <h3>🚕 Transportation & Driving Laws</h3>
+        <ul>
+          <li>Driving under the influence of alcohol is a criminal offense with severe penalties.</li>
+          <li>Seat belts are mandatory for all passengers.</li>
+          <li>Do not use hand gestures or aggressive language in traffic; it may be deemed offensive.</li>
+        </ul>
+      </div>
 
-        const accessibilityHtml = `
-            <li>${p.full_details.accessibility.wheelchairAccessibleEntrance ? '✅ Wheelchair Accessible Entrance' : '❌ No Wheelchair Access'}</li>
-            <li>${p.full_details.accessibility.restroom ? '✅ Restrooms Available' : '❌ No Restrooms'}</li>
-            <li>${p.full_details.accessibility.familyFriendly ? '✅ Family Friendly' : '❌ Not Family Friendly'}</li>
-            <li>${p.full_details.accessibility.goodForChildren ? '✅ Good For Children' : '❌ Not Suited for Children'}</li>
-        `;
-        
-        const paymentHtml = `
-            <li>${p.full_details.payment.cash ? '✅ Accepts Cash' : '❌ Does Not Accept Cash'}</li>
-            <li>${p.full_details.payment.credit ? '✅ Accepts Credit Cards' : '❌ Does Not Accept Credit Cards'}</li>
-            <li>${p.full_details.payment.debit ? '✅ Accepts Debit Cards' : '❌ Does Not Accept Debit Cards'}</li>
-        `;
-        
-        // Map Embed Logic (Utilizing location.latitude and location.longitude)
-        const mapLatitude = p.full_details.location.latitude;
-        const mapLongitude = p.full_details.location.longitude;
-        const mapSrc = `https://maps.google.com/maps?q=${mapLatitude},${mapLongitude}&z=15&output=embed`;
+      <div class="legal-category">
+        <h3>🛍️ Shopping & Consumer Rights</h3>
+        <ul>
+          <li>Most stores have a clear return policy—ask before purchasing.</li>
+          <li>Tax refunds for tourists are available on eligible purchases via official VAT refund counters.</li>
+          <li>Counterfeit goods are illegal to buy or carry.</li>
+        </ul>
+      </div>
 
+      <div class="legal-category">
+        <h3>⚖️ General Conduct & Etiquette</h3>
+        <ul>
+          <li>Public displays of affection are discouraged and can attract fines.</li>
+          <li>Dress modestly in public spaces, especially religious or cultural sites.</li>
+          <li>Respect local customs during Ramadan and avoid eating in public during fasting hours.</li>
+        </ul>
+      </div>
 
-        const html = `
-          <div class="card">
-            <img src="${p.images.featured}" alt="${p.name}" />
-            <h3>${p.emoji} ${p.name}</h3>
-            
-            <div class="meta-row">
-              <span>${getStars(p.rating.score)} (${p.rating.score})</span> • 
-              <span>${p.rating.total_reviews.toLocaleString()} reviews</span>
-              <span style="font-size: 0.85rem;">${p.full_details.address.split(',').slice(-3, -2).join('').trim()}</span>
-            </div>
-            
-            <p style="margin-top:8px;color:#555;">${p.summary}</p>
+      <p style="margin-top:15px; font-style:italic;">Disclaimer: This information is for general awareness. For updated or case-specific guidance, consult the UAE government travel portal or a licensed legal advisor.</p>
+    </section>
 
-            <div class="card-details-extra expanded">
-              
-              <h4>🧭 Practical Information</h4>
-              <div class="info-grid">
-                
-                <div class="info-box">
-                    <h5 style="margin-top:0;color:#5a2f20;">Operating Hours</h5>
-                    <ul style="padding-left:20px; font-size:0.9em;">${hoursHtml}</ul>
-                </div>
-                
-                <div class="info-box">
-                    <h5 style="margin-top:0;color:#5a2f20;">Accessibility & Facilities</h5>
-                    <ul class="check-list" style="padding-left:0; font-size:0.9em;">${accessibilityHtml}</ul>
-                </div>
-                
-                <div class="info-box">
-                    <h5 style="margin-top:0;color:#5a2f20;">Payment & Parking</h5>
-                    <ul class="check-list" style="padding-left:0; font-size:0.9em;">
-                        ${paymentHtml}
-                        <li>${p.full_details.parking.free ? '✅ Free Parking Available' : '❌ No Free Parking'}</li>
-                        <li>${p.full_details.parking.paid ? '✅ Paid Parking Available' : '❌ No Paid Parking'}</li>
-                    </ul>
-                </div>
-
-              </div>
-              
-              <h4 style="margin-top:20px;">📜 History & Details</h4>
-              <p>${p.details.history.description}</p>
-
-              <h4>✅ Must Do Activities</h4>
-              <ul>${mustDoHtml}</ul>
-
-              <h4>⭐ Local Experiences & Tips</h4>
-              ${expHtml}
-
-              <h4>💬 Traveler Reviews</h4>
-              ${reviewHtml}
-              
-              <h4 style="margin-top:20px;">🗺️ Location Map</h4>
-              <iframe src="${mapSrc}" class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              
-            </div>
-          </div>
-        `;
-        placesListEl.insertAdjacentHTML('beforeend', html);
-      });
-    }
-
-    renderOverview(places);
-    renderPlaces(places);
-  </script>
+  </div>
 </body>
 </html>

@@ -1,458 +1,600 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  
-  <title>The Sky High Delhi: Ultimate Rooftop Bar & Fine Dining Guide in Ansal Plaza</title>
-  
-  <meta name="description" content="Discover The Sky High in New Delhi, the premier rooftop bar and fine dining restaurant in Ansal Plaza. Get reviews, operating hours, menu details, and directions for your next unforgettable night out." />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* 🌅 SUNSET & SKY THEME */
-    :root {
-      --primary: #005691; /* Deep Blue */
-      --secondary: #f4c430; /* Golden Yellow for accents */
-      --light-bg: #ffffff; /* Bright background */
-      --card-bg: #f8f8f8; /* Off-white card background */
-      --text-color: #333333; /* Dark text */
-      --muted: #666666;
-      --review-bg: #f0f0f0;
-      --success: #1e8449; /* Darker Green */
-      --info-bg: #e6f3ff; /* Light blue background for key info */
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cool Indoor Things to See — Dubai & Abu Dhabi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --card: #ffffff;
+            --muted: #6b6b6b;
+            --accent: #8fc156;
+            /* main theme green */
+            --accent-2: #f6c85f;
+            /* warm gold accent */
+            --glass: rgba(255, 255, 255, 0.6);
+            --radius: 14px;
+            --shadow: 0 6px 18px rgba(18, 18, 18, 0.06);
+            --max-width: 1100px;
+        }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--light-bg);
-      margin: 0;
-      color: var(--text-color);
-    }
+        * {
+            box-sizing: border-box
+        }
 
-    header {
-      text-align: center;
-      background-color: var(--primary);
-      color: white;
-      padding: 2rem 1rem;
-    }
-    
-    /* **SEO Optimization - H1:** Make the H1 the primary focus keyword for the article. 
-    */
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2rem;
-      color: white; 
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    }
+        html,
+        body {
+            height: 100%
+        }
 
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: linear-gradient(180deg, var(--bg), #fff);
+            color: #222;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
 
-    /* **SEO Optimization - Headings:** Ensure H2, H3, and H4 structure is logical. 
-    */
-    h2, h3, h4 {
-      color: var(--primary);
-      margin-top: 1.5rem;
-      padding-bottom: 5px;
-      border-bottom: 2px solid var(--secondary);
-    }
-    
-    .venue-card {
-      background: var(--card-bg);
-      border-radius: 14px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-    }
+        .content-wrapper {
+            width: 100%;
+            max-width: var(--max-width);
+            background: transparent;
+        }
 
-    /* --- Image Style --- */
-    .venue-photo {
-        width: 100%;
-        height: 350px; /* Slightly larger image for visual appeal */
-        background-color: #ccc;
-        border-radius: 10px;
-        margin-bottom: 1.5rem;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-        border: 2px solid var(--primary);
-    }
-    /* ------------------------ */
+        /* Header */
+        .header-section {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 24px;
+            align-items: start;
+            margin-bottom: 22px;
+        }
 
-    .meta-row {
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    
-    .rating-score {
-        background: var(--secondary);
-        color: var(--text-color);
-        padding: 8px 15px;
-        border-radius: 50px;
-        font-weight: 700;
-        font-size: 1.1rem;
-    }
-    
-    .price-level {
-        color: var(--primary);
-        font-weight: 700;
-        font-size: 1.1rem;
-    }
-    
-    .status-operational { background: var(--success); color: white; }
-    .status-closed { background: #d9534f; color: white; }
+        @media (max-width:880px) {
+            .header-section {
+                grid-template-columns: 1fr;
+            }
+        }
 
-    .detail-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted min-width */
-        gap: 25px;
-        margin-top: 20px;
-    }
+        .header-section h1 {
+            margin: 0 0 12px 0;
+            font-size: clamp(20px, 3.2vw, 32px);
+            line-height: 1.05;
+            font-weight: 700;
+            color: #111;
+        }
 
-    /* Extended grid for services (5 columns or wrap) */
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
-        gap: 15px;
-        margin-top: 20px;
-    }
-    
-    .info-box {
-        background: var(--light-bg);
-        border: 1px solid #e0e0e0;
-        padding: 1.2rem;
-        border-radius: 10px;
-        transition: box-shadow 0.2s;
-    }
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px
+        }
 
-    .info-box.highlight {
-        background: var(--info-bg);
-        border: 1px solid var(--primary);
-    }
-    
-    .info-box strong {
-        color: var(--primary);
-        display: block;
-        margin-bottom: 8px;
-        font-size: 1.1rem;
-    }
-    
-    .info-box ul {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-    }
-    
-    .info-box li {
-        margin-bottom: 4px;
-        font-size: 0.95rem;
-        color: var(--text-color);
-    }
-    
-    .cta-buttons {
-        display: flex;
-        gap: 15px;
-        margin-top: 20px;
-    }
-    
-    .cta-buttons a {
-        padding: 12px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 700;
-        transition: background-color 0.2s;
-    }
+        .tag {
+            background: linear-gradient(90deg, rgba(143, 193, 86, 0.15), rgba(246, 200, 95, 0.08));
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--accent);
+            border: 1px solid rgba(183, 110, 121, 0.12);
+        }
 
-    .cta-map { background: var(--primary); color: white; }
-    .cta-map:hover { background: #004070; }
-    
-    .cta-website { background: var(--secondary); color: var(--text-color); border: 1px solid var(--secondary); }
-    .cta-website:hover { background: #e6b324; }
+        .main-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
 
-    .review-item {
-      background: var(--review-bg);
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      border-left: 5px solid var(--secondary);
-    }
+        /* Intro */
+        .article-intro {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
 
-    .review-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 8px;
-    }
-    
-    .review-user {
-      font-weight: 600;
-      color: var(--primary);
-    }
+        .article-intro p {
+            margin: 0 0 12px 0;
+            color: var(--muted);
+            line-height: 1.6
+        }
 
-    .review-score {
-      color: var(--secondary); 
-      font-size: 0.9em;
-    }
-    
-    .review-comment {
-        color: var(--muted);
-        line-height: 1.5;
-        font-style: italic;
-    }
-    
-    .map-embed {
-        border: 1px solid #ddd;
-        width: 100%;
-        height: 400px;
-        border-radius: 10px;
-        margin-top: 15px;
-    }
-    
-    .cuisine-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        list-style: none;
-        padding: 0;
-        margin-top: 10px;
-    }
-    
-    .cuisine-list li {
-        background: var(--secondary);
-        color: var(--text-color);
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        font-weight: 600;
-    }
-    
-    .bullet-point-summary {
-        list-style: disc;
-        padding-left: 20px;
-        margin-top: 10px;
-        color: var(--text-color);
-    }
+        .article-intro ul {
+            margin: 12px 0 0 18px
+        }
 
-    footer {
-        text-align: center;
-        padding: 1.5rem;
-        margin-top: 3rem;
-        background-color: var(--card-bg);
-        color: var(--muted);
-        font-size: 0.9rem;
-        border-top: 1px solid #eee;
-    }
-    
-  </style>
+        .article-intro li {
+            margin: 8px 0
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #eee, transparent);
+            margin: 26px 0
+        }
+
+        /* Attraction detail */
+        .attraction-detail {
+            background: var(--card);
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .attraction-detail h2 {
+            margin-top: 0
+        }
+
+        .summary-rating {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 8px
+        }
+
+        .stars {
+            letter-spacing: 3px;
+            font-size: 16px;
+            color: var(--accent);
+        }
+
+        .review-count {
+            color: var(--muted);
+            font-weight: 600
+        }
+
+        .info-box {
+            background: linear-gradient(180deg, rgba(246, 200, 95, 0.06), rgba(183, 110, 121, 0.02));
+            padding: 14px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.03)
+        }
+
+        .info-box h3 {
+            margin: 0 0 6px 0;
+            font-size: 15px
+        }
+
+        h3 {
+            margin-top: 20px
+        }
+
+        .detail-ratings {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px
+        }
+
+        .rating-item {
+            background: var(--glass);
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        /* Reviews */
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 10px
+        }
+
+        @media (max-width:920px) {
+            .reviews-container {
+                grid-template-columns: repeat(1, 1fr)
+            }
+        }
+
+        .review-card {
+            background: #fff;
+            padding: 12px;
+            border-radius: 10px;
+            border-left: 4px solid rgba(183, 110, 121, 0.14);
+            box-shadow: 0 4px 12px rgba(18, 18, 18, 0.04)
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px
+        }
+
+        .reviewer-name {
+            font-weight: 700
+        }
+
+        .rating-badge {
+            font-weight: 700
+        }
+
+        .review-text {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.5
+        }
+
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+        }
+
+        .contact-details,
+        .map {
+            flex: 1 1 300px;
+            padding: 30px;
+        }
+
+        .contact-details h2 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-details p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            color: var(--muted);
+        }
+
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border: 0;
+            border-radius: 0;
+        }
+
+        #status {
+            margin-top: 10px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Booking CTA */
+        .booking-cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 18px;
+            padding: 14px;
+            border-radius: 12px;
+            background: linear-gradient(90deg, rgba(183, 110, 121, 0.06), rgba(246, 200, 95, 0.04));
+            border: 1px solid rgba(183, 110, 121, 0.08)
+        }
+
+        .booking-cta p {
+            margin: 0
+        }
+
+        .booking-cta a {
+            padding: 10px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            color: #fff
+        }
+
+        /* Small helpers */
+        a {
+            color: var(--accent);
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        /* Make images inside content responsive */
+        .attraction-detail img {
+            border-radius: 10px;
+            max-height: 420px;
+            object-fit: cover
+        }
+
+        /* Accessibility focus states */
+        a:focus,
+        button:focus {
+            outline: 3px solid rgba(183, 110, 121, 0.18);
+            outline-offset: 3px
+        }
+
+        .legal-section {
+            background: #eef6e7;
+            border-left: 6px solid #8fc156;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 25px;
+        }
+
+        .legal-section h2 {
+            color: #4b6043;
+            margin-bottom: 10px;
+        }
+
+        .legal-section ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        .legal-category {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .legal-category h3 {
+            color: #8fc156;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .info-boxes {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1 id="placeNameHeader">The Sky High Delhi: Best Rooftop Bar & Fine Dining</h1>
-    <p id="placeTagline" style="color:white; font-size:1.2rem; font-weight:300; margin-top:5px;">
-        <span id="primaryTypeDisplay">Rooftop Restaurant, Bar & Lounge | Ansal Plaza, New Delhi</span>
-    </p>
-  </header>
-
-  <main>
-    <section class="venue-card">
-      
-      <div class="venue-photo" id="venuePhoto" style="background-image: url('https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICnkOzMnAE!2e10!4m2!3m1!1s0x390ce244700fb193:0xad018fb6e2cef39e');">
-          <span style="position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;">Rooftop view of The Sky High in Ansal Plaza, New Delhi</span>
-      </div>
-      
-      <div class="meta-row">
-          <span id="placeRating">⭐⭐⭐⭐☆ <span class="rating-score">4.1</span></span>
-          <span id="reviewCount" style="color:var(--muted); font-size: 1rem;">**2,691 Reviews**</span>
-          <span id="priceLevel" class="price-level">$$$ Expensive</span>
-          <span id="businessStatus" class="status-badge status-operational " style="padding: 4px; border-radius: 40px; ">OPERATIONAL</span>
-      </div>
-      
-      <h2>✨ Experience The Sky High: Delhi's Premier Rooftop Destination</h2>
-      <p id="editorialSummary" style="margin-top:8px; color:var(--text-color); font-size:1.05rem;">
-        **The Sky High** is renowned as one of the **best rooftop bars in New Delhi**, offering a stunning panoramic view and an extensive menu of global cuisine. Located conveniently in **Ansal Plaza**, it features exquisite Asian, Italian, Mughlai, and Continental fare, complemented by a vibrant atmosphere, perfect for a memorable evening of **fine dining in South Delhi**.
-      </p>
-      
-      <div class="cta-buttons">
-          <a id="ctaMapLink" class="cta-map" target="_blank" href="https://maps.google.com/?cid=12466403259190277022&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA">📍 GET DIRECTIONS to Ansal Plaza</a>
-          <a id="ctaWebsiteLink" class="cta-website" target="_blank" href="#">🌐 VIEW MENU & BOOK TABLE</a> 
-      </div>
-      
-      <div class="detail-grid">
-        
-        <div class="info-box highlight">
-            <strong>🕰️ The Best Time to Visit The Sky High Delhi</strong>
-            <ul id="visitTimeSummary" class="bullet-point-summary" style="list-style:none; padding-left:0;">
-                <li>**Best Time:** Evening for the **rooftop ambiance** and beautiful city views.</li>
-                <li>**Ideal Meal:** **Dinner** (Open daily until 1:00 AM) — perfect for a late-night experience.</li>
-                <li>**Tip:** Due to high popularity for its **rooftop seating**, we strongly recommend reserving your table in advance.</li>
-            </ul>
-        </div>
-        
-        <div class="info-box">
-            <strong>🍽️ Must-Try Dishes & Vibe at this Fine Dining Spot</strong>
-            <ul id="mealReviewSummary" class="bullet-point-summary">
-                <li>**Must-Try Dishes:** Highly rated items include the **Chicken Tikka**, gourmet **pizza**, and the refreshing **fruit punch cocktail**.</li>
-                <li>**Vibe:** Known for its **lively rooftop ambiance** with **live music**—an ideal spot for celebrations and large groups.</li>
-                <li>**Service Feedback:** While the staff is **friendly and helpful**, be prepared for potentially **slow service** during peak hours.</li>
-            </ul>
-        </div>
-      </div>
-      
-      <h2>📞 Operating Hours & Location in Ansal Plaza, New Delhi</h2>
-      <div class="detail-grid" >
-        <div class="info-box">
-            <strong>Contact Information & Quick Details</strong>
-            <p style="margin-top:10px;">
-                <strong style="color:var(--secondary);">International Phone:</strong> 
-                <a id="placePhoneInternational" style="color:var(--primary); text-decoration:none;" href="tel:+919870199077">+91 98701 99077</a>
-            </p>
-            <p style="margin-top:10px;">
-                <strong style="color:var(--secondary);">Local Phone:</strong> 
-                <span id="placePhoneNational">098701 99077</span>
-            </p>
-            <p style="margin-top:10px;">
-                <strong style="color:var(--secondary);">Next Closing Time:</strong> 
-                <strong id="nextClose" style="color:var(--primary);">1:00 AM</strong> (IST)
-            </p>
-        </div>
-        <div class="info-box">
-            <strong>Daily Operating Hours (Open Late!)</strong>
-            <ul id="hoursList" style="margin-top:5px;">
-                <li>**Monday:** 12:00 PM – 1:00 AM</li>
-                <li>**Tuesday:** 12:00 PM – 1:00 AM</li>
-                <li>**Wednesday:** 12:00 PM – 1:00 AM</li>
-                <li>**Thursday:** 12:00 PM – 1:00 AM</li>
-                <li>**Friday:** 12:00 PM – 1:00 AM</li>
-                <li>**Saturday:** 12:00 PM – 1:00 AM</li>
-                <li>**Sunday:** 12:00 PM – 1:00 AM</li>
-            </ul>
-            <p style="font-size:0.9em; margin-top:10px; color:var(--muted);">
-                **Address Snippet:** Ansal Plaza, C 306A, August Kranti Marg, Hudco Place, Khel Gaon, Andrews Ganj, **New Delhi 110049**
-            </p>
-        </div>
-      </div>
-
-      <h2>⚙️ Services, Amenities, and Accessibility at This Top Delhi Restaurant</h2>
-      <div class="services-grid">
-          
-          <div class="info-box">
-              <strong>Dining & Reservations</strong>
-              <ul id="diningServices">
-                  <li>✅ 🍽️ **In-House Dine-In** Service</li>
-                  <li>✅ 🥡 **Takeout** Available</li>
-                  <li>✅ 📅 **Reservations** Recommended for Rooftop</li>
-                  <li>❌ 🚗 Curbside Pickup Not Available</li>
-              </ul>
-          </div>
-          
-          <div class="info-box">
-              <strong>Meal & Drink Service</strong>
-              <ul id="mealServices">
-                  <li>✅ 🍳 Serves **Breakfast**</li>
-                  <li>✅ 🥗 Serves **Lunch**</li>
-                  <li>✅ 🥩 Serves **Dinner**</li>
-                  <li>✅ 🍺 Serves **Beer** (Full Bar)</li>
-                  <li>✅ 🍷 Serves **Wine** (Full Bar)</li>
-              </ul>
-          </div>
-
-          <div class="info-box">
-              <strong>✨ Venue Amenities & Suitability</strong>
-              <ul id="amenitiesServices">
-                  <li>✅ 🌳 **Outdoor Rooftop Seating**</li>
-                  <li>✅ 👥 Excellent for **Group Gatherings**</li>
-                  <li>✅ 👨‍👩‍👧 Good for **Families and Children**</li>
-                  <li>✅ ☕ Serves **Coffee**</li>
-                  <li>✅ 🚻 Restroom Available</li>
-                  <li>❌ 👶 Dedicated Menu for Children</li>
-              </ul>
-          </div>
-
-          <div class="info-box">
-              <strong>🅿️ Parking Options Near The Sky High</strong>
-              <ul id="parkingServices">
-                  <li>✅ **Free Parking Lot** (Subject to Mall rules)</li>
-                  <li>✅ Paid Parking Lot Available</li>
-                  <li>✅ Paid Street Parking Nearby</li>
-              </ul>
-          </div>
-          
-          <div class="info-box">
-              <strong>💳 Accepted Payment Methods</strong>
-              <ul id="paymentServices">
-                  <li>✅ Accepts **Credit Cards** (Visa, Mastercard, etc.)</li>
-                  <li>✅ Accepts **Debit Cards**</li>
-                  <li>✅ Accepts **NFC Payments** (Contactless)</li>
-                  <li>❌ Cash Only is NOT the policy</li>
-              </ul>
-          </div>
-
-          <div class="info-box">
-              <strong>♿ Accessibility Features</strong>
-              <ul id="accessibilityServices">
-                  <li>✅ **Wheelchair Accessible Entrance**</li>
-                  <li>✅ **Wheelchair Accessible Seating**</li>
-                  <li>❌ Wheelchair Accessible Restroom (Verify on site)</li>
-              </ul>
-          </div>
-
-      </div>
-      
-      <h2>💬 Latest Traveler Reviews for The Sky High (2,691 Total)</h2>
-      <div id="reviewsList">
-          <div class="review-item">
-            <div class="review-header">
-                <span class="review-user">Pranav Kumar</span>
-                <span class="review-score">⭐⭐⭐⭐☆</span>
+    <div class="content-wrapper">
+        <header class="header-section">
+            <div>
+                <h1>Cool Things to See and Experience Indoors in Dubai and Abu Dhabi</h1>
+                <div class="tag-container">
+                    <div class="tag">dubai & abu dhabi</div>
+                    <div class="tag">family friendly</div>
+                    <div class="tag">indoor adventures</div>
+                    <div class="tag">culture & museums</div>
+                </div>
+                <img src="pexels-pixabay-162031.jpg"
+                    alt="A general image representing Dubai/Abu Dhabi indoor activities" class="main-image">
             </div>
-            <div class="review-comment">A Delightful Experience Overall! The **rooftop ambiance** was impressive, and the **sky-high view** added a special charm to the visit. The food was delicious, and the drinks were exceptionally well-crafted. The menu was thoughtfully curated, featuring a wide range of major cuisines to suit varied tastes. The staff were warm and welcoming, enhancing the overall experience. However, the seating layout could be improved for better comfort and space management. Definitely worth a one-time visit for **Delhiites looking for a unique dining experience**! <span style="font-size: 0.8em; color: var(--muted); margin-left: 5px;">— 3 months ago</span></div>
-          </div>
-          </div>
-      
-      <h2>🗺️ Map & Directions to The Sky High Rooftop Bar</h2>
-      <iframe id="mapEmbed" class="map-embed" src="https://maps.google.com/maps?q=$28.562589,77.22394&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              
-      <h3 style="margin-top:30px;">📑 Full Address Components (For Navigation & Delivery)</h3>
-      <p style="color:var(--muted); font-size:0.9em;">Detailed breakdown of the location within Ansal Plaza for mapping/delivery services:</p>
-      <ul id="addressComponentsList" class="bullet-point-summary" style="list-style:disc; padding-left:25px; margin-top:10px;">
-          <li>**Sub-Premise:** 307,T101,102 (The specific floor/unit)</li>
-          <li>**Premise:** **Ansal Plaza** (Major Landmark)</li>
-          <li>**Street Address:** C 306A, August Kranti Marg</li>
-          <li>**Sub-Locality:** Hudco Place, Khel Gaon, Andrews Ganj</li>
-          <li>**Locality:** **New Delhi**</li>
-          <li>**Country:** India (IN)</li>
-          <li>**Postal Code:** 110049 (Essential for local search)</li>
-      </ul>
-      
-      <h3 style="margin-top:30px;">🏷️ Cuisine Types and Categories</h3>
-      <ul id="cuisineList" class="cuisine-list">
-          <li>**Rooftop Bar**</li>
-          <li>**Fine Dining Restaurant**</li>
-          <li>Night Club</li>
-          <li>Chinese Restaurant</li>
-          <li>Bar</li>
-          <li>Italian Restaurant</li>
-          <li>Indian Restaurant</li>
-          <li>Lounge</li>
-      </ul>
-      
-    </section>
-  </main>
 
-  <footer>
-    <p>© 2025 The Travel Blog | Your Guide to the Best of New Delhi | <a href="#" style="color:var(--primary); text-decoration: none;">Privacy Policy</a></p>
-  </footer>
+            <!-- aside card: quick facts -->
+            <aside class="info-box" aria-hidden="false">
+                <h3>Quick Facts</h3>
+                <p class="muted" style="margin:6px 0 0 0">Best time: Year-round (avoid midday outdoor heat). Language:
+                    Arabic & English. Currency: AED.</p>
+                <hr style="border:0;height:1px;background:#eee;margin:12px 0">
+                <p style="margin:0;font-size:14px"><strong>Top Picks:</strong></p>
+                <ul style="margin:8px 0 0 18px">
+                    <li>Ski Dubai</li>
+                    <li>Louvre Abu Dhabi</li>
+                    <li>VR Park Dubai</li>
+                </ul>
+            </aside>
+        </header>
 
-  </body>
+        <section class="article-intro">
+            <p>Dubai and Abu Dhabi, known for their stunning architecture and luxurious outdoor attractions, also offer
+                a plethora of indoor activities that cater to all interests. Whether you're looking to escape the heat
+                or simply want to explore something new, here are some cool indoor experiences you shouldn't miss:</p>
+            <ul>
+                <li><strong>The Dubai Mall:</strong> Beyond shopping, this mall houses an indoor ice rink, an aquarium,
+                    and a virtual reality park.</li>
+                <li><strong>Louvre Abu Dhabi:</strong> A masterpiece of architecture and art, this museum offers a rich
+                    collection of artworks from around the world.</li>
+                <li><strong>Ski Dubai:</strong> Experience snow in the desert with indoor skiing, snowboarding, and even
+                    penguin encounters.</li>
+                <li><strong>VR Park Dubai:</strong> Dive into immersive virtual reality experiences that range from
+                    thrilling adventures to artistic explorations.</li>
+                <li><strong>Etihad Museum:</strong> Learn about the history of the UAE through interactive exhibits and
+                    multimedia presentations.</li>
+                <li><strong>Dubai Opera:</strong> Enjoy world-class performances in this architectural marvel that hosts
+                    operas, ballets, concerts, and theater productions.</li>
+                <li><strong>KidZania Dubai:</strong> A unique edutainment center where children can role-play various
+                    professions in a mini-city setup.</li>
+            </ul>
+            <p class="muted">These indoor attractions provide a perfect blend of culture, entertainment, and adventure,
+                making them ideal for visitors looking to explore Dubai and Abu Dhabi beyond their outdoor splendor.</p>
+        </section>
+
+        <hr>
+
+        <section class="attraction-detail" aria-labelledby="burj">
+            <h2 id="burj">1. Burj Khalifa</h2>
+            <div class="summary-rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="review-count">(4.8/5 based on 2300 reviews)</span>
+            </div>
+
+            <img src="pexels-pixabay-162031.jpg" alt="Image of Burj Khalifa"
+                style="width: 100%; height: auto; margin-top: 20px;">
+
+            <p>The <a href="#">Burj Khalifa</a>, standing at an impressive height of 828 meters, is the tallest building
+                in the world and a symbol of Dubai's rapid development and architectural innovation. Visitors can
+                experience breathtaking views of the city from its observation decks on the 124th, 125th, and 148th
+                floors. The building also features luxurious residences, corporate suites, and the renowned Armani
+                Hotel. The Burj Khalifa is not just a marvel of engineering but also a hub for cultural events.</p>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top:8px;">
+                <div class="info-box" style="flex: 1; min-width:180px;">
+                    <h3>Opening Hours</h3>
+                    <p><strong>Sunday to Wednesday:</strong> 8:30 AM - 11:00 PM<br>
+                        <strong>Thursday to Saturday:</strong> 8:30 AM - 12:00 AM
+                    </p>
+                </div>
+                <div class="info-box" style="flex: 1; min-width:180px;">
+                    <h3>Entry Fee (Approximate)</h3>
+                    <p><strong>Adults:</strong> $40<br>
+                        <strong>Children (4-12 years):</strong> $30<br>
+                        <strong>Children under 4:</strong> Free
+                    </p>
+                </div>
+            </div>
+
+            <h3>Tips for Your Visit</h3>
+            <ul>
+                <li>Book tickets online in advance to avoid long queues and save money.</li>
+                <li>Visit during sunset for a spectacular view of the city lights and the surrounding area.</li>
+                <li>Check the weather forecast as visibility can be affected by fog or haze, particularly in the
+                    mornings.</li>
+            </ul>
+
+            <h3>Visitor Ratings</h3>
+            <div class="detail-ratings">
+                <div class="rating-item"><span class="stars">⭐⭐⭐⭐⭐</span> Security</div>
+                <div class="rating-item"><span class="stars">⭐⭐⭐⭐⭐</span> Cleanliness</div>
+                <div class="rating-item"><span class="stars">⭐⭐⭐⭐⭐</span> Value for Money</div>
+                <div class="rating-item"><span class="stars">⭐⭐⭐⭐⭐</span> Facilities</div>
+            </div>
+
+            <h3>Recent Reviews</h3>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">Alice W.</span>
+                        <span class="rating-badge rating-5">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="review-text">"An unforgettable experience! The view from the top is breathtaking, and the
+                        whole process was seamless."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">John D.</span>
+                        <span class="rating-badge rating-4">⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="review-text">"Amazing architecture and great facilities. A must-visit in Dubai, though the
+                        queue was a bit long."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">Sara K.</span>
+                        <span class="rating-badge rating-5">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="review-text">"The staff were very friendly and helpful. Loved every moment of my visit!
+                        Highly recommend the sunrise slot."</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Must-Know Information</h3>
+                <ul>
+                    <li>Photography is allowed, but tripods are not permitted on the observation decks.</li>
+                    <li>There are dining options available at the top, including At.mosphere, one of the highest
+                        restaurants in the world.</li>
+                    <li>Accessibility features are available for visitors with disabilities.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Editor summary</h3>
+                <p>The Burj Khalifa is located in Downtown Dubai, easily accessible via the Dubai Metro (Burj Khalifa /
+                    Dubai Mall Station) or by taxi. Ample parking is available at The Dubai Mall for those driving.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <h2>Contact details</h2>
+                    <p>If you have any questions or need further assistance regarding your visit to the Burj Khalifa,
+                        please feel free to reach out to our support team. We're here to help make your experience
+                        unforgettable!</p>
+
+                    <div class="contact-info">
+                        <p><strong>📍 Address:</strong> Downtown Dubai, UAE</p>
+                        <p><strong>📞 Phone:</strong> +971 55 123 4567</p>
+                        <p><strong>✉️ Email:</strong> support@dubaitravelhub.com</p>
+                    </div>
+
+
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115802.8799507641!2d55.1456202!3d25.0990453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d5eeb6b6a57%3A0xa8d8bcd9c3fae9d7!2sBurj%20Khalifa!5e0!3m2!1sen!2sae!4v1709999999999!5m2!1sen!2sae"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="booking-cta">
+                <p style="font-size: 1.05em; font-weight: 700; color: var(--accent);">Ready to experience the world's
+                    tallest building?</p>
+                <a href="#">Book Your Tickets Now</a>
+            </div>
+
+        </section>
+        <section class="legal-section">
+            <h2>Legal Advice for Travelers in Dubai & Abu Dhabi</h2>
+            <p>When traveling in the UAE, it’s important to be aware of the laws that affect visitors, especially
+                regarding travel, transportation, and shopping. Below are essential legal pointers to help you stay
+                informed and avoid misunderstandings:</p>
+
+            <div class="legal-category">
+                <h3>🛫 Travel & Visa Regulations</h3>
+                <ul>
+                    <li>Always carry your passport or Emirates ID; photocopies may not be accepted.</li>
+                    <li>Overstaying your visa can result in fines or detention—ensure timely renewal.</li>
+                    <li>Respect airport security rules; photography in restricted areas is not allowed.</li>
+                </ul>
+            </div>
+
+            <div class="legal-category">
+                <h3>🚕 Transportation & Driving Laws</h3>
+                <ul>
+                    <li>Driving under the influence of alcohol is a criminal offense with severe penalties.</li>
+                    <li>Seat belts are mandatory for all passengers.</li>
+                    <li>Do not use hand gestures or aggressive language in traffic; it may be deemed offensive.</li>
+                </ul>
+            </div>
+
+            <div class="legal-category">
+                <h3>🛍️ Shopping & Consumer Rights</h3>
+                <ul>
+                    <li>Most stores have a clear return policy—ask before purchasing.</li>
+                    <li>Tax refunds for tourists are available on eligible purchases via official VAT refund counters.
+                    </li>
+                    <li>Counterfeit goods are illegal to buy or carry.</li>
+                </ul>
+            </div>
+
+            <div class="legal-category">
+                <h3>⚖️ General Conduct & Etiquette</h3>
+                <ul>
+                    <li>Public displays of affection are discouraged and can attract fines.</li>
+                    <li>Dress modestly in public spaces, especially religious or cultural sites.</li>
+                    <li>Respect local customs during Ramadan and avoid eating in public during fasting hours.</li>
+                </ul>
+            </div>
+
+            <p style="margin-top:15px; font-style:italic;">Disclaimer: This information is for general awareness. For
+                updated or case-specific guidance, consult the UAE government travel portal or a licensed legal advisor.
+            </p>
+        </section>
+    </div>
+</body>
+
 </html>
